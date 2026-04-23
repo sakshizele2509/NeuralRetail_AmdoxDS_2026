@@ -37,3 +37,10 @@ Churn Model + Forecast Model → MLflow Tracking
 
 ```bash
 python main.py
+## Week-1 Completed
+
+- Data ingestion & cleaning
+- RFM feature engineering
+- Churn prediction model (AUC: 0.79)
+- Demand forecasting model (MAPE: ~2%)
+- MLflow experiment tracking
