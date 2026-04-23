@@ -1,10 +1,23 @@
+# Virtual Environment
 venv/
+env/
+
+# Python
 __pycache__/
 *.pyc
-data/raw/
-data/bronze/
-data/silver/
-data/gold/
+*.pyo
+
+# MLflow
 mlruns/
-.env
+
+# Data (optional if large)
+data/raw/*.csv
+data/processed/*.csv
+data/features/*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
 .DS_Store
+Thumbs.db

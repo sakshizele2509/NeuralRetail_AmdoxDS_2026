@@ -7,6 +7,7 @@ from src.data.ingest import load_raw_data
 from src.data.clean import clean_data
 from src.features.build_features import build_features
 from src.models.baseline_churn import run_churn_model
+from src.models.baseline_forecast import run_forecast_model
 from src.config import FEATURE_DATA_PATH
 
 
@@ -22,6 +23,7 @@ def run_pipeline():
     features = build_features(clean_df)
 
     run_churn_model(FEATURE_DATA_PATH)
+    run_forecast_model()
 
 
 if __name__ == "__main__":
